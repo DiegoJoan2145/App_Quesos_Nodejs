@@ -1,0 +1,73 @@
+<% for(var i=0; i< producto.length; i++) {%>
+<div class="review">
+  <% if(producto[i].filename) { %>
+  <div
+    class="user-img"
+    style="background-image: url('upload/<%= producto[i].filename %>')"
+  ></div>
+  <% } else{ %> 
+    <div
+    class="user-img"
+    style="background-image: url('Images/usuario.png')"
+  ></div>
+  <% } %>
+  <div class="desc">
+    <h4>
+      <span class="text-left"><%= producto[i].nombreReseña %></span>
+      <span class="text-right"><%= producto[i].fechaReseña %></span>
+    </h4>
+    <p class="star">
+      <% if(producto[i].calificacion === 1){ %>
+      <span>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </span>
+      <% } %> <% if(producto[i].calificacion === 2){ %>
+      <span>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </span>
+      <% } %> <% if(producto[i].calificacion === 3){ %>
+      <span>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </span>
+      <% } %> <% if(producto[i].calificacion === 4){ %>
+      <span>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </span>
+      <% } %> <% if(producto[i].calificacion === 5){ %>
+      <span>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </span>
+      <% } %> <% if(producto[i].calificacion === 0){ %>
+      <span>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </span>
+      <% } %>
+    </p>
+    <p><%= producto[i].descripcionReseña %></p>
+  </div>
+</div>
+<% } %>

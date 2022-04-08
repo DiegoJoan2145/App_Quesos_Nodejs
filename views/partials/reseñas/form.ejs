@@ -1,0 +1,74 @@
+
+    <div class="modal-body">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupFileAddon01">Subir Imagen</span>
+            </div>
+            <div class="custom-file">
+              <input type="file" name="image" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" required>
+              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            </div>
+          </div>
+    <div class="form-group">
+    <h6 for="exampleFormControlInput1">Nombre Usuario</h6>
+    <input id="nombre" name="nombre" type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+    </div>
+    
+    <div class="form-group">
+    <h6 for="descripcionReseña">Descripción</h6>
+    <textarea class="form-control" id="descripcionReseña" name="descripcionReseña" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+    <h6 for="exampleFormControlSelect1">Calificación</h6>
+    <style>
+    #form h3 {
+    text-align: center;
+    height: 50%;
+    }
+    
+    #form label {
+    font-size: 100px;
+    }
+    
+    input[type="radio"] {
+    display: none;
+    }
+    
+    label {
+    color: grey;
+    }
+    
+    .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    }
+    
+    label:hover,
+    label:hover ~ label {
+    color: orange;
+    }
+    
+    input[type="radio"]:checked ~ label {
+    color: orange;
+    }
+    </style>
+    <h3 class="clasificacion">
+    <input id="radio1" type="radio" name="estrellas" value="5" required><!--
+    --><label for="radio1">★</label><!--
+    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+    --><label for="radio2">★</label><!--
+    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+    --><label for="radio3">★</label><!--
+    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+    --><label for="radio4">★</label><!--
+    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+    --><label for="radio5">★</label>
+    </h3>
+    </div>
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+    <input type="submit" value="Guardar" class="btn btn-primary">
+    </div>
+    
+    </form>

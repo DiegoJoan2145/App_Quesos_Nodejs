@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('partials/head'); %>
+  </head>
+
+  <body>
+    <div id="page">
+      <nav class="colorlib-nav" role="navigation">
+        <%- include('partials/nav'); %>
+      </nav>
+      <aside id="colorlib-hero">
+        <div class="flexslider">
+          <ul class="slides">
+            <li style="background-image: url(./Images/img_bg_9.jpg)">
+              <div class="overlay"></div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6 offset-sm-3 text-center slider-text">
+                    <div class="slider-text-inner"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li style="background-image: url(./Images/img_bg_3.jpg)">
+              <div class="overlay"></div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6 offset-sm-3 text-center slider-text">
+                    <div class="slider-text-inner">
+                      <div class="desc">
+                        <h1 class="head-1">Registrate</h1>
+                        <h2 class="head-2">Y obten hasta un</h2>
+                        <h2 class="head-3">
+                          <strong class="font-weight-bold">15%</strong> de descuento
+                        </h2>
+                        <p class="category"><span>En tu primer compra</span></p>
+                        <p>
+                          <a a class="snipcart-customer-signin btn btn-primary">Registrarse</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li style="background-image: url(./Images/img_bg_5.jpg)">
+              <div class="overlay"></div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6 offset-sm-3 text-center slider-text">
+                    <div class="slider-text-inner">
+                      <div class="desc">
+                        <h1 class="head-1">Quesos la quinta</h1>
+                        <br>
+                        <h2 class="head-2">
+                          Productos lacteos de primera calidad
+                        </h2>
+                        <p>
+                          <a href="/nosotros" class="btn btn-primary">Conoce más de nosotros</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <style>
+        .contenedor:hover .a .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
+        .contenedor {overflow:hidden;}
+      </style>
+      
+
+      <!-- Mejores vendidos -->
+      <div class="colorlib-product">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-center colorlib-heading">
+              <h2>Productos más populares</h2>
+            </div>
+          </div>
+          <div class="row row-pb-md">
+            <div  class="col-lg-3 mb-4 text-center">
+              <div  id="movimiento" class="product-entry border">
+                <a href="/QuesoArtesanal" class="prod-img">
+                  <img src="./Images/item-1.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                </a>
+                <div class="desc">
+                  <h2><a href="/QuesoArtesanal">Queso Artesanal</a></h2>
+                  <span class="price">$45.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 text-center">
+              <div id="movimiento" class="product-entry border">
+                <a href="/QuesoOaxaca" class="prod-img">
+                  <img src="./Images/item-2.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                </a>
+                <div class="desc">
+                  <h2><a href="/QuesoOaxaca">Queso Oaxaca</a></h2>
+                  <span class="price">$39.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 text-center">
+              <div id="movimiento" class="product-entry border">
+                <a href="/QuesoOrion" class="prod-img">
+                  <img src="./Images/item-3.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                </a>
+                <div class="desc">
+                  <h2><a href="/QuesoOrion">Queso Orion</a></h2>
+                  <span class="price">$39.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 text-center">
+              <div id="movimiento" class="product-entry border">
+                <a href="/QuesoRanchero" class="prod-img">
+                  <img src="./Images/item-4.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                </a>
+                <div class="desc">
+                  <h2><a href="/QuesoRanchero">Queso Ranchero</a></h2>
+                  <span class="price">$35.99</span>
+                </div>
+              </div>
+            </div>
+                  </div>
+              </div>
+          </div>
+  
+        <!-- Productos -->
+        <div class="colorlib-product" id="Productos">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-center colorlib-heading">
+              <h2>Productos</h2>
+            </div>
+          </div>
+          <div class="row row-pb-md">
+            <div class="col-lg-3 mb-4 text-center">
+              <div id="movimiento" class="product-entry border">
+                <a href="/QuesoArtesanal" class="prod-img">
+                  <img src="./Images/item-1.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                </a>
+                <div class="desc">
+                  <h2><a href="/QuesoArtesanal">Queso Artesanal</a></h2>
+                  <button class="btn btn-primary snipcart-add-item"
+                  data-item-id="1"
+                  data-item-price="45.00"
+                  data-item-url="/paintings/starry-night"
+                  data-item-description="Queso con gran textura y de gran calidad para hacer ricos platillos hecho con leche de vaca natural 100%, 70% de humedad para que este al día"
+                  data-item-image="./Images/item-1.png"
+                  data-item-name="Queso Artesanal"
+                  data-item-custom1-name="Tamaño"
+                  data-item-custom1-options="200 gr">
+                  Agregar al Carrito $45.00
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 text-center">
+              <div id="movimiento" class="product-entry border">
+                <a href="/QuesoOaxaca" class="prod-img">
+                  <img src="./Images/item-2.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                </a>
+                <div class="desc">
+                  <h2><a href="/QuesoOaxaca">Queso Oaxaca</a></h2>
+                  <button class="btn btn-primary snipcart-add-item"
+                  data-item-id="2"
+                  data-item-price="39.99"
+                  data-item-url="/paintings/starry-night"
+                  data-item-description="Queso con gran textura y de gran calidad para hacer ricos platillos hecho con leche de vaca natural 100%, 70% de humedad para que este al día"
+                  data-item-image="./Images/item-2.png"
+                  data-item-name="Queso Oaxaca"
+                  data-item-custom1-name="Tamaño"
+                  data-item-custom1-options="200 gr">
+                  Agregar al Carrito $39.99
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 text-center">
+              <div id="movimiento" class="product-entry border">
+                <a href="/QuesoOrion" class="prod-img">
+                  <img src="./Images/item-3.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                </a>
+                <div class="desc">
+                  <h2><a href="/QuesoOrion">Queso Orion</a></h2>
+                  <button class="btn btn-primary snipcart-add-item"
+                  data-item-id="3"
+                  data-item-price="39.99"
+                  data-item-url="/paintings/starry-night"
+                  data-item-description="Queso con gran textura y de gran calidad para hacer ricos platillos hecho con leche de vaca natural 100%, 70% de humedad para que este al día"
+                  data-item-image="./Images/item-3.png"
+                  data-item-name="Queso Orion"
+                  data-item-custom1-name="Tamaño"
+                  data-item-custom1-options="200 gr">
+                  Agregar al Carrito $39.99
+                </button>	
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4 text-center">
+              <div id="movimiento" class="product-entry border">
+                <a href="/QuesoRanchero" class="prod-img">
+                  <img src="./Images/item-4.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                </a>
+                <div class="desc">
+                  <h2><a href="/QuesoRanchero">Queso Ranchero</a></h2>
+                  <button class="btn btn-primary snipcart-add-item"
+                  data-item-id="4"
+                  data-item-price="35.99"
+                  data-item-url="/paintings/starry-night"
+                  data-item-description="Queso con gran textura y de gran calidad para hacer ricos platillos hecho con leche de vaca natural 100%, 70% de humedad para que este al día"
+                  data-item-image="./Images/item-2.png"
+                  data-item-name="Queso Ranchero"
+                  data-item-custom1-name="Tamaño"
+                  data-item-custom1-options="200 gr">
+                  Agregar al Carrito $35.99
+                  </button>
+                </div>
+              </div>
+            </div>
+
+              <div class="w-100"></div>
+
+            <div class="col-lg-3 mb-4 text-center">
+              <div id="movimiento" class="product-entry border">
+                <a href="/QuesoPanela" class="prod-img">
+                  <img src="./Images/item-5.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                </a>
+                <div class="desc">
+                  <h2><a href="/QuesoPanela">Queso Panela</a></h2>
+                  <button class="btn btn-primary snipcart-add-item"
+                  data-item-id="5"
+                  data-item-price="50.00"
+                  data-item-url="/paintings/starry-night"
+                  data-item-description="Queso con gran textura y de gran calidad para hacer ricos platillos hecho con leche de vaca natural 100%, 70% de humedad para que este al día"
+                  data-item-image="./Images/item-5.png"
+                  data-item-name="Queso Panela"
+                  data-item-custom1-name="Tamaño"
+                  data-item-custom1-options="200 gr">
+                  Agregar al Carrito $50.00
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 mb-4 text-center">
+              <div id="movimiento" class="product-entry border">
+                <a href="/QuesoRancheroOrion" class="prod-img">
+                  <img src="./Images/item-6.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                </a>
+                <div class="desc">
+                  <h2><a href="/QuesoRancheroOrion">Queso Ranchero OR</a></h2>
+                  <button class="btn btn-primary snipcart-add-item"
+                  data-item-id="6"
+                  data-item-price="35.99"
+                  data-item-url="/paintings/starry-night"
+                  data-item-description="Queso con gran textura y de gran calidad para hacer ricos platillos hecho con leche de vaca natural 100%, 70% de humedad para que este al día"
+                  data-item-image="./Images/item-6.png"
+                  data-item-name="Queso Ranchero Orion"
+                  data-item-custom1-name="Tamaño"
+                  data-item-custom1-options="200 gr">
+                  Agregar al Carrito $35.99
+                  </button>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      
+
+
+        <!--  Proximos Productos    -->
+        <div class="colorlib-product" id="Productos">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 offset-sm-2 text-center colorlib-heading">
+                <h2>Proximos Productos</h2>
+              </div>
+            </div>
+            <div class="row row-pb-md">
+              <div class="col-lg-3 mb-4 text-center">
+                <div id="movimiento" class="product-entry border">
+                  <a href="/QuesoOaxacaVerde" class="prod-img">
+                    <img src="./Images/logo.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                  </a>
+                  <div class="desc">
+                    <br>
+                    <h2><a href="/QuesoOaxacaVerde">Queso Oaxaca Verde</a></h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4 text-center">
+                <div id="movimiento" class="product-entry border">
+                  <a href="/QuesoOaxacaRallado" class="prod-img">
+                    <img src="./Images/logo.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                  </a>
+                  <div class="desc">
+                    <br>
+                    <h2><a href="/QuesoOaxacaRallado">Queso Oaxaca Rallado</a></h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4 text-center">
+                <div  id="movimiento" class="product-entry border">
+                  <a href="/QuesoOrionRallado" class="prod-img">
+                    <img src="./Images/logo.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                  </a>
+                  <div class="desc">
+                    <br>
+                    <h2><a href="/QuesoOrionRallado">Queso Orion Rallado</a></h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4 text-center">
+                <div id="movimiento" class="product-entry border">
+                  <a href="/QuesoPanelaVerde" class="prod-img">
+                    <img src="./Images/logo.png" class="img-fluid" alt="Productos Lacteos La Quinta 30 años de experiencia">
+                  </a>
+                  <div class="desc">
+                    <br>
+                    <h2><a href="/QuesoPanelaVerde">Queso Panela Verde</a></h2>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <footer id="colorlib-footer" role="contentinfo">
+        <%- include('partials/footer'); %>
+      </footer>
+        <!-- Button -->
+        <%- include('partials/Boton'); %>
+    </div>
+    <%- include('partials/script'); %>
+  </body>
+</html>
